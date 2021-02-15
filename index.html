@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt ol</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Kayıt ol</h2>
+        </div>
+
+        <form action="" class="form" id="form">
+
+            <div class="form-control">
+                <label for="">Ad*</label>
+                <input type="text" name="firstname" id="firstname" title="Ad" placeholder="Adınızı girin."
+                    autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+            <div class="form-control">
+                <label for="">Soyad</label>
+                <input type="text" name="lastname" id="lastname" title="Soyad" placeholder="Soyadınızı girin"
+                    autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Doğum Tarihi</label>
+
+                <input type="date" id="birthday" name="birthday" value="" min="1930-01-01" max="2020-12-31"
+                    autocomplete="off">
+
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+
+
+
+
+            <div class="form-control">
+                <label for="">Kullanıcı Adı*</label>
+                <input type="text" name="username" id="username" title="Kullanıcı adı"
+                    placeholder="Kullanıcı adınızı giriniz" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+            <div class="form-control">
+                <label for="">Email*</label>
+                <input type="email" name="" id="email" placeholder="Email giriniz" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+            <div class="form-control">
+                <label for="">Telefon Numarası*</label>
+                <input type="number" name="mobile" id="mobile" title="Telefon numarası girin"
+                    placeholder="Alan kodu olmadan telefon numaranızı girin" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+            <div class="form-control">
+                <label for="">Şifre*</label>
+                <input type="password" name="password" id="password" title="Şifre"
+                    placeholder="!.,?<=>&*%$#@)({}[]/ gibi karakterler kuıllanabilirsin">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+            <div class="form-control">
+                <label for="">Şifreyi Onayla*</label>
+                <input type="password" name="password2" id="password2" title="Şifreyi onayla"
+                    placeholder="Aynı şifreni tekrar gir">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="small">Hata mesajı</small>
+            </div>
+            <input type="submit" value="Kaydet" class="btn" onclick=successRegister()>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
